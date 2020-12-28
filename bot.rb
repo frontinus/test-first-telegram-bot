@@ -8,10 +8,18 @@ bot.get_updates(fail_silently: true) do |message|
 
   message.reply do |reply|
     case command
-    when /infos/i
-      reply.text = "J'ai un secret à te confier,essaye d'utiliser l'autre commande."
+    when /Comment vas tu Papacito?/i
+      reply.text = ""
     when /secret/i
       reply.text = "Salut, #{message.from.first_name}, t'es qu'un sale boucaque puant"
+    when /montre moi une image?/i
+      reply.text = ""
+    when /montre moi une video?/i
+      reply.text = ""
+    when /raconte moi une connerie?/i
+      reply.text = ""
+    when /ecris moi des autisteries?/i
+      reply.text = ""
     else
       reply.text = "Hein,parle français sale gnoule."
     end
